@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import ViewAllPetitionsPage from "./pages/ViewAllPetitionsPage";
 import CreatePetitionPage from "./pages/CreatePetitionPage";
 import SearchPetitionsPage from "./pages/SearchPetitionsPage";
+import PetitionDetailsPage from "./pages/PetitionDetailsPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<ViewAllPetitionsPage />} />
         <Route path="/create" element={<CreatePetitionPage />} />
         <Route path="/petitions/search" element={<SearchPetitionsPage />} />
+        <Route path="/petitions/:id" element={<PetitionDetailsPage />} />
       </Routes>
     </Router>
   );
